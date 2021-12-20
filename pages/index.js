@@ -1,16 +1,18 @@
 import Head from "next/head";
 import Login from "../components/Login";
+import { useMoralis } from "react-moralis";
 
 export default function Home() {
-  const isAuthenticated = false;
-if( !isAuthenticated ) return (<Login/>);
+  const {isAuthenticated} = useMoralis();
+
+  if (!isAuthenticated) return <Login />;
   return (
-    <div className="h-screen ">
+    <div>
       <Head>
-        <title>Meta verse dApp</title>
+        <title> Meta web3 dApp </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>wellcome to the metaverse</h1>
+      <h1> wellcome to the app {process.env.NEXT_PUBLIC_APP_ID} </h1>{" "}
     </div>
   );
 }
