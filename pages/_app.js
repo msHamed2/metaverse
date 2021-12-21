@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { MoralisProvider } from "react-moralis";
 function MyApp({ Component, pageProps }) {
   return(
-    <MoralisProvider appId="tyLFC1fmpdQY3I6rDFkvoGqwlEUQXgkcQxSrhft7" serverUrl="https://wvall52zxfp2.usemoralis.com:2053/server">
+  <MoralisProvider appId={process.env.NEXT_PUBLIC_APP_ID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>
 
   <Component {...pageProps} />
   </MoralisProvider>
