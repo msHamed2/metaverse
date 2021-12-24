@@ -18,12 +18,7 @@ export default function Home() {
           <Header />
           {/* messages */}
         </div>
-      <button
-        className="text-black bg-yellow-300 rounded-lg p-5 font-bold animate-pulse"
-        onClick={logout}
-      >
-        Log out
-      </button>
+      
     </div>
   );
 }

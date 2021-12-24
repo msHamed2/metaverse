@@ -11,12 +11,12 @@ function Login() {
       <div className="flex flex-col absolute z-50 w-full h-4/6  items-center justify-center space-y-4">
           <Image 
           className="object-cover rounded-full"
-           src="https://links.papareact.com/3pi"
+           src="https://i.imgur.com/xQlgicI.jpg"
           width={200} height={200}
            />
            <button
            onClick={authenticate}
-            className="text-black bg-yellow-300 rounded-lg p-5 font-bold animate-pulse">
+            className="text-black bg-red-700 rounded-lg p-5 font-bold animate-pulse">
               Login to The MetaVerse 
               </button>
 
