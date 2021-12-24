@@ -23,7 +23,7 @@ function Login() {
       </div>
       <div className="w-full h-screen">
           <Image 
-          src="https://links.papareact.com/55n" 
+          src="https://i.imgur.com/9yfVdph.jpg" 
           layout='fill' 
           objectFit="cover"
            />
