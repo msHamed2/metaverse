@@ -2,9 +2,10 @@ import Head from "next/head";
 import Login from "../components/Login";
 import { useMoralis } from "react-moralis";
 import Header from "../components/Header";
+import Messages from "../components/Messages";
 
 export default function Home() {
-  const { isAuthenticated, logout, user } = useMoralis();
+  const { isAuthenticated } = useMoralis();
 
   if (!isAuthenticated) return <Login />;
   return (
@@ -14,9 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <div className="max-w-screen-2xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Header />
-          {/* messages */}
+        <Messages/>
         </div>
       
     </div>
