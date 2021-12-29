@@ -21,7 +21,7 @@ function SendMessage({endOfMessagesRef}) {
     //moralis error with error code
     console.log(error.message);
   })
-  //endOfMessagesRef.current.scrollIntoView({behavior:"smooth"});
+  endOfMessagesRef.current.scrollIntoView({ behavior: "smooth" });
   setMsg("");
   };
 
